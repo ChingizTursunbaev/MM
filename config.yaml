@@ -1,0 +1,52 @@
+# spatial_q_mamba/config.yaml
+
+
+####################   Grid is 1 #####################
+
+paths:
+  gloss_dict: "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/Phoenix-2014/gloss2ids.pkl"
+  train_data: "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/tokenized_KP_gpu/tokenized.train"
+  dev_data:   "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/tokenized_KP_gpu/tokenized.dev"
+  test_data:  "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/tokenized_KP_gpu/tokenized.test"
+  output_dir: "./experiments/px1-emb2"
+
+model:
+  num_joints: 133
+  token_embed_dim: 2
+  model_dim: 512
+  compress_factor: 30 
+  num_layers: 4
+  dropout: 0.4
+
+training:
+  batch_size: 1
+  epochs: 100
+  learning_rate: 0.0001
+  save_every: 5
+  print_every: 100
+
+
+
+# ####################   Grid is 1, 71% WER #####################
+
+# paths:
+#   gloss_dict: "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/Phoenix-2014/gloss2ids.pkl"
+#   train_data: "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/tokenized_KP_gpu/tokenized.train"
+#   dev_data:   "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/tokenized_KP_gpu/tokenized.dev"
+#   test_data:  "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/tokenized_KP_gpu/tokenized.test"
+#   output_dir: "./experiments/run_v3_px1"
+
+# model:
+#   num_joints: 133
+#   token_embed_dim: 8
+#   model_dim: 512
+#   compress_factor: 30 
+#   num_layers: 4
+#   dropout: 0.4
+
+# training:
+#   batch_size: 1
+#   epochs: 100
+#   learning_rate: 0.0001
+#   save_every: 5
+#   print_every: 100
