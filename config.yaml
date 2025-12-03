@@ -27,6 +27,8 @@ training:
 
 
 
+# Ignore the below configuration
+
 # ####################   Grid is 1, 71% WER #####################
 
 # paths:
@@ -49,4 +51,5 @@ training:
 #   epochs: 100
 #   learning_rate: 0.0001
 #   save_every: 5
+
 #   print_every: 100
