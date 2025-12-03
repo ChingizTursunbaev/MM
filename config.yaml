@@ -1,7 +1,7 @@
-# spatial_q_mamba/config.yaml
+# /config.yaml
 
 
-####################   Grid is 1 #####################
+####################   Grid is 1, 62.99% WER #####################
 
 paths:
   gloss_dict: "/shared/home/xvoice/Chingiz/slr_project_ms_corr_mamba/data/Phoenix-2014/gloss2ids.pkl"
@@ -53,3 +53,4 @@ training:
 #   save_every: 5
 
 #   print_every: 100
+
